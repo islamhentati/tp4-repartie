@@ -106,6 +106,10 @@ UDP est un protocole non connecté : le client envoie ses datagrammes sans étab
 
 ![Client Omar](image/c.png)
 
+**resultat de serveur:**
+
+![Serveur](image/e.png)
+
 ### Synthèse
 
 Le serveur simule une « connexion » en mémorisant l'adresse de chaque client à son premier message. La diffusion se fait en parcourant la liste des clients et en envoyant un datagramme à chacun, sauf à l'expéditeur. Côté client, l'utilisation de threads permet d'envoyer et de recevoir en même temps, ce qui donne un échange en temps quasi réel entre plusieurs clients.
